@@ -30,20 +30,27 @@ To run this website locally on your computer, follow these steps:
    ```bash
    cd DroneWorld
 
-4. **Run the Server**:
+4. **Install Dependencies**:
+
+   
+   Run the following command to install Express and the 'body-parser' middleware:
+   ```bash
+   npm install express body-parser
+
+6. **Run the Server**:
 
    ```bash
    node app.js
    
-5. **Access the Website**:
+7. **Access the Website**:
 
    Open a web browser and navigate to '[http://localhost:3000](http://localhost:3000)'
    
-6. **Stop the Server**
+8. **Stop the Server**
 
    Press 'Ctrl + C' to stop the server.
 
 
-## Dependencies
+## Other Dependencies
 
 This website uses jQuery for DOM manipulation and event handling. Ensure you have an internet connection to proper load jQuery from a CDN.
