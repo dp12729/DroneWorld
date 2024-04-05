@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drone World</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Drone World</h1>
+        <nav>
+			<a href="index.html#home">Home</a>
+			<a href="about.html#about">About</a>
+			<a href="contact.html#contact">Contact</a>
+			<a href="gallery.html">Gallery</a>
+		</nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Welcome to Drone World!</h2>
+            <p>Welcome to Drone World, where passion meets technology, and the skies are the canvas for our adventures. Founded by a computer engineering and philosophy major at Georgia Southern University, Drone World is a platform dedicated to showcasing the mesmerizing world of drones and the limitless possibilities they offer. Whether you're an enthusiast, a curious newcomer, or simply intrigued by the fusion of innovation and philosophy, you've come to the right place.</p>
+        </section>
+
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Drone World is the brainchild of a visionary mind deeply rooted in the realms of computer engineering and philosophy. As a student at Georgia Southern University, our founder recognized the transformative potential of drones – not just as tools of aerial exploration but also as catalysts for philosophical contemplation and reflection. Driven by a profound curiosity and a relentless pursuit of knowledge, Drone World aims to transcend the boundaries of conventional hobbies. We believe that drones are more than mere gadgets; they are gateways to understanding the intersection of technology, humanity, and the natural world. Through captivating visuals, insightful articles, and thought-provoking discussions, Drone World invites you to embark on a journey beyond the horizon. Join us as we explore the wonders of flight, push the limits of innovation, and ponder the profound questions that arise when man and machine take to the skies. At Drone World, the sky is not the limit – it's just the beginning. Welcome aboard, and let's soar to new heights together!</p>
+			<div class="gallery">
+            </div>
+			
+        <div class="full-page-image">
+        <img src="screen4.png" alt="Full Page Image">
+		</div>
+
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form id="contactForm" action="/contact" method="post">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2024 Drone World. Contact us at info@droneworld.com
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+	$(document).ready(function(){
+		// Add smooth scrolling to all links
+		$("a").on('click', function(event) {
+
+		// Make sure this.hash has a value before overriding default behavior
+		if (this.hash !== "") {
+			// Prevent default anchor click behavior
+			event.preventDefault();
+
+			// Store hash
+			var hash = this.hash;
+
+			// Using jQuery's animate() method to add smooth page scroll
+			// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+			$('html, body').animate({
+			scrollTop: $(hash).offset().top
+			}, 800, function(){
+
+			// Add hash (#) to URL when done scrolling (default click behavior)
+			window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+</body>
+</html>
