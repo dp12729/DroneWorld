@@ -42,3 +42,8 @@ To run this website locally on your computer, follow these steps:
 6. **Stop the Server**
 
    Press 'Ctrl + C' to stop the server.
+
+
+## Dependencies
+
+This website uses jQuery for DOM manipulation and event handling. Ensure you have an internet connection to proper load jQuery from a CDN.
